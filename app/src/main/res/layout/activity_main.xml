@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#C5C0C0"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtFName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First name: "
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="150px"/>
+
+    <EditText
+
+        android:id="@+id/edtFName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Bill"
+        android:textColorHint="#000000"
+        android:background="@color/colorYellow"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="40px"
+        android:paddingLeft="20px"/>
+
+    <TextView
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20px"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last name: "
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"/>
+
+    <EditText
+
+        android:id="@+id/edtLName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Crisper"
+        android:textColorHint="#000000"
+        android:background="@color/colorYellow"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="40px"
+        android:paddingLeft="20px"/>
+
+    <TextView
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20px"
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title "
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40px"
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr"
+            android:paddingRight="50px"
+            android:checked="true"
+            android:buttonTint="@color/colorDark"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mrs"
+            android:paddingRight="50px"
+            android:buttonTint="@color/colorDark"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miss"
+            android:paddingRight="50px"
+            android:buttonTint="@color/colorDark"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ms"
+            android:paddingRight="50px"
+            android:buttonTint="@color/colorDark"
+            />
+    </RadioGroup>
+    <TextView
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20px"
+        android:id="@+id/txtBrith"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Birthday: "
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px">
+
+
+        <EditText
+            android:id="@+id/edtDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="31"
+            android:textColorHint="@color/colorDark"
+            android:inputType="number"
+            android:background="@color/colorYellow"
+            android:layout_marginRight="40px"
+
+
+            />
+        <EditText
+            android:id="@+id/edtMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="08"
+            android:textColorHint="@color/colorDark"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@color/colorYellow"
+            android:layout_marginRight="40px"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:id="@+id/edtYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="1980"
+            android:textColorHint="@color/colorDark"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@color/colorYellow"
+            android:layout_marginRight="40px"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="billcrisper@gmail.com"
+        android:textColorHint="@color/colorDark"
+        android:background="@color/colorYellow"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="40px"
+        android:paddingLeft="20px"/>
+
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone: "
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="347-432-5545"
+        android:inputType="phone"
+        android:textColorHint="@color/colorDark"
+        android:textColor="@color/colorDark"
+        android:background="@color/colorYellow"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="40px"
+        android:paddingLeft="20px"/>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:layout_marginTop="100px"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
